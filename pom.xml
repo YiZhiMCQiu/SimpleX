@@ -57,9 +57,9 @@
     </dependencies>
     <distributionManagement>
         <repository>
-            <id>internal.repo</id>
-            <name>Temporary Staging Repository</name>
-            <url>file://${project.build.directory}/mvn-repo</url>
+            <id>github</id>
+            <name>GitHub YiZhiMCQiu Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/YiZhiMCQiu/SimpleX</url>
         </repository>
     </distributionManagement>
 </project>
