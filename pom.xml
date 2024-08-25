@@ -8,45 +8,45 @@
     <artifactId>simplex</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>2.8.2</version>
-                <configuration>
-                    <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-                <version>0.11</version>
-                <configuration>
-                    <message> Maven artifacts for ${project.version} </message>
-                    <noJekyll> true </noJekyll>
-                    <outputDirectory> ${project.build.directory}/mvn-repo </outputDirectory>
-                    <branch> refs/heads/mvn-repo </branch>
-                    <includes><include> **/* </include></includes>
-                    <repositoryName> SimpleX </repositoryName>
-                    <repositoryOwner> YiZhiMCQiu </repositoryOwner>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal> site </goal>
-                        </goals>
-                        <phase> deploy </phase>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <artifactId>maven-deploy-plugin</artifactId>-->
+<!--                <version>2.8.2</version>-->
+<!--                <configuration>-->
+<!--                    <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>com.github.github</groupId>-->
+<!--                <artifactId>site-maven-plugin</artifactId>-->
+<!--                <version>0.11</version>-->
+<!--                <configuration>-->
+<!--                    <message> Maven artifacts for ${project.version} </message>-->
+<!--                    <noJekyll> true </noJekyll>-->
+<!--                    <outputDirectory> ${project.build.directory}/mvn-repo </outputDirectory>-->
+<!--                    <branch> refs/heads/mvn-repo </branch>-->
+<!--                    <includes><include> **/* </include></includes>-->
+<!--                    <repositoryName> SimpleX </repositoryName>-->
+<!--                    <repositoryOwner> YiZhiMCQiu </repositoryOwner>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal> site </goal>-->
+<!--                        </goals>-->
+<!--                        <phase> deploy </phase>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <github.global.server>github</github.global.server>
+<!--        <github.global.server>github</github.global.server>-->
     </properties>
     <dependencies>
         <dependency>
@@ -55,11 +55,11 @@
             <version>24.0.0</version>
         </dependency>
     </dependencies>
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub YiZhiMCQiu Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/YiZhiMCQiu/SimpleX</url>
-        </repository>
-    </distributionManagement>
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>github</id>-->
+<!--            <name>GitHub YiZhiMCQiu Apache Maven Packages</name>-->
+<!--            <url>https://maven.pkg.github.com/YiZhiMCQiu/SimpleX</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
 </project>
